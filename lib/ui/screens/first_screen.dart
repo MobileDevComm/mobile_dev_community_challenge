@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_dev_community_challenge/ui/style/colors.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../style/texts.dart';
 import 'package:mobile_dev_community_challenge/ui/widgets/ReusableWidgets.dart';
@@ -16,18 +15,7 @@ class FirstScreen extends StatelessWidget {
         children:[
           Row(
             children :[
-            Container(
-              height:54,
-              width:49,
-              color: AppColor.backButton,
-              decoration:BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ) ,
-              child:const Icon(
-                  FontAwesomeIcons.arrowLeft,
-                  color:AppColor.iconColor
-              ),
-              ),
+            arrowLeftIcon(),
             Text('Upload Documents', style:kHeadline3TextStyle),
           ],
           ),
@@ -51,5 +39,7 @@ class FirstScreen extends StatelessWidget {
     );
   }
 }
+
+
 
 

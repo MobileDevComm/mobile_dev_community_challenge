@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../style/colors.dart';
 import '../style/texts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -21,7 +22,7 @@ class BottomContainer1 extends StatelessWidget {
 }
 
 
-// for the containers i first screen
+// for the containers i first screen5
 class ReusableContainer1 extends StatelessWidget {
   ReusableContainer1({ required this.svgLogoURI,required this.text }) ;
 
@@ -45,4 +46,26 @@ class ReusableContainer1 extends StatelessWidget {
       ),
     );
   }
+}
+
+
+// for the arrow left icon button
+class arrowLeftIcon extends StatelessWidget {
+  const arrowLeftIcon( ) ;
+
+@override
+Widget build(BuildContext context) {
+  return Container(
+    height:54,
+    width:49,
+    color: AppColor.backButton,
+    decoration:BoxDecoration(
+      borderRadius: BorderRadius.circular(10),
+    ) ,
+    child:const Icon(
+        FontAwesomeIcons.arrowLeft,
+        color:AppColor.iconColor
+    ),
+  );
+}
 }
