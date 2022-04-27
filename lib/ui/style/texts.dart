@@ -60,10 +60,10 @@ TextStyle kSubtitle2TextStyle = const TextStyle(
   fontSize: 14,
 );
 
-TextStyle kBodyText1TextStyle = const TextStyle(
+TextStyle kBodyText1TextStyle =  TextStyle(
   fontFamily: AppFont.body,
   fontWeight: FontWeight.normal,
-  color: AppColor.textPrimary,
+  color: AppColor.primarySwatch.shade50,
   fontSize: 14,
 );
 
@@ -87,4 +87,10 @@ TextStyle kButtonTextStyle = const TextStyle(
   fontWeight: FontWeight.bold,
   color: Colors.white,
   fontSize: 15,
+);
+
+TextStyle topBtn = const TextStyle(
+  fontSize: 18,
+  color: Colors.white70,
+
 );
