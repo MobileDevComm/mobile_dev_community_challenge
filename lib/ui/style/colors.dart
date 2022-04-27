@@ -44,11 +44,16 @@ class AppColor {
   );
 
   static const Color scaffoldBgColor = Colors.white;
-
   static Color primaryBtnBg = primarySwatch;
   static const Color primaryAltBtnBg = Color(0xFFF4F6FF);
   static const Color secondaryAltBtnBg = Color(0xFFDFE1FB);
   static const Color secondaryIconBtnBg = Color(0xFFEDF0FF);
+
+  //for the backward button
+static const Color backButton = Color.fromRGBO(149, 160, 252, 0.15);
+
+//for the bottom navigation button
+  static const bottomContainerColor = Color(0xFF2FCF5F);
 
   //Title texts, captions, inputs fields and everywhere else where black is required
   static const Color textPrimary = Color(0xFF25282B);

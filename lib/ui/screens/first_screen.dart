@@ -1,12 +1,55 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_dev_community_challenge/ui/style/colors.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../style/texts.dart';
+import 'package:mobile_dev_community_challenge/ui/widgets/ReusableWidgets.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text("Don't leave your home here!"),),
+    return Scaffold(
+      backgroundColor: AppColor.scaffoldBgColor,
+      body:Column(
+        children:[
+          Row(
+            children :[
+            Container(
+              height:54,
+              width:49,
+              color: AppColor.backButton,
+              decoration:BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+              ) ,
+              child:const Icon(
+                  FontAwesomeIcons.arrowLeft,
+                  color:AppColor.iconColor
+              ),
+              ),
+            Text('Upload Documents', style:kHeadline3TextStyle),
+          ],
+          ),
+          Column (
+            children: [
+              Text('Upload Documents', style:kHeadline2TextStyle ,),
+              Text('Enter the OTP that was sent to your ',style:kBodyText1TextStyle,),
+            ],
+          ),
+          Row(
+            children:[
+              ReusableContainer1(svgLogoURI: 'assets/svgs/name 1.svg', text: 'Valid Identification Card',),
+              ReusableContainer1(svgLogoURI: 'assets/svgs/Vector.svg', text: 'Electricity or Utility Bill',),
+            ],
+          ),
+          ReusableContainer1(svgLogoURI: 'assets/svgs/badge 1.svg', text: 'CAC certification',),
+          Text('Every upload is subjected to review', style: kBodyText1TextStyle,),
+          BottomContainer1(bottomContainerText: 'SAVE CHANGES',)
+        ]
+      )
     );
   }
 }
+
+

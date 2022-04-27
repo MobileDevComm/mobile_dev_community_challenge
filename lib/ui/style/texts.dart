@@ -88,3 +88,6 @@ TextStyle kButtonTextStyle = const TextStyle(
   color: Colors.white,
   fontSize: 15,
 );
+TextStyle kBottomContainerText = const TextStyle(
+  color: Colors.white,
+);
