@@ -36,7 +36,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_svg: ^1.0.3
+
   font_awesome_flutter: ^10.1.0
+
 
 dev_dependencies:
   flutter_test:
@@ -97,5 +99,9 @@ flutter:
           weight: 600
         - asset: assets/fonts/GTWalsheimPro/GTWalsheimPro-Bold.ttf
           weight: 700
+
+
+
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
