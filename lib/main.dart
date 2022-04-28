@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mobile_dev_community_challenge/ui/screens/first_screen.dart';
+//import 'package:mobile_dev_community_challenge/ui/screens/first_screen.dart';
+import 'package:mobile_dev_community_challenge/ui/screens/second_screen.dart';
 
 import 'ui/style/colors.dart';
 import 'ui/style/themes.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'Challenge App',
       debugShowCheckedModeBanner: false,
       theme: kThemeData,
-      home: FirstScreen(),
+      home: SecondScreen(),
     );
   }
 }

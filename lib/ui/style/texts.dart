@@ -81,6 +81,7 @@ TextStyle kCaptionTextStyle = const TextStyle(
   fontSize: 12,
 );
 
+
 /// This is the primary button Style
 TextStyle kButtonTextStyle = const TextStyle(
   fontFamily: AppFont.body,
@@ -90,4 +91,8 @@ TextStyle kButtonTextStyle = const TextStyle(
 );
 TextStyle kBottomContainerText = const TextStyle(
   color: Colors.white,
+  fontWeight: FontWeight.bold,
 );
+TextStyle kTopSentenceBottomContainerText = const TextStyle(
+color: Colors.purple,
+    fontWeight: FontWeight.bold) ;

@@ -4,6 +4,8 @@ import '../style/colors.dart';
 import '../style/texts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+
+
 //for the apps bottom navigation widget
 class BottomContainer1 extends StatelessWidget {
   BottomContainer1({required this.bottomContainerText  }) ;
@@ -13,7 +15,10 @@ class BottomContainer1 extends StatelessWidget {
     return Container(
       width:334,
       height: 55,
-      color: AppColor.bottomContainerColor,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30),
+        color: AppColor.bottomContainerColor,
+        ),
       child:  Center(
         child: Text( bottomContainerText, style: kBottomContainerText),
       ),
@@ -32,17 +37,21 @@ class ReusableContainer1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(10),
       width: 159,
       height: 206,
-      color: AppColor.checkboxInactive,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
+        color: AppColor.closeBg,
+          border: Border.all(color: AppColor. inputPlaceholder)
       ),
-      child:Column(
-        children: [
-          SvgPicture.asset( svgLogoURI),
-          Text (text, style: kCaptionTextStyle, ),
-        ],
+      child:Center(
+        child: Column(
+          children: [
+            SvgPicture.asset( svgLogoURI),
+            Text (text, style: kCaptionTextStyle, ),
+          ],
+        ),
       ),
     );
   }
@@ -58,9 +67,9 @@ Widget build(BuildContext context) {
   return Container(
     height:54,
     width:49,
-    color: AppColor.backButton,
     decoration:BoxDecoration(
       borderRadius: BorderRadius.circular(10),
+      color: AppColor.backButton,
     ) ,
     child:const Icon(
         FontAwesomeIcons.arrowLeft,
@@ -70,3 +79,47 @@ Widget build(BuildContext context) {
 }
 }
 
+
+
+class PictureContainer1 extends StatelessWidget {
+  const PictureContainer1({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 180,
+      width: 325,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          border: Border.all(
+              width: 2,
+              style: BorderStyle.solid
+          )
+      ),
+      child: const Center(
+          child: Text('Click to browse or drag\n and drop cover photo', )),
+    );
+  }
+}
+
+
+class reviewSentence extends StatelessWidget {
+  const reviewSentence({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.fromLTRB(10, 10, 0, 10),
+      child: Row(
+        children: [
+          Text('Every upload is subjected to ', style: kBodyText1TextStyle,),
+          const Text('review',style:TextStyle(color: Colors.purple,fontWeight: FontWeight.bold) ,)
+        ],
+      ),
+    );
+  }
+}
