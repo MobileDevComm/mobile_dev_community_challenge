@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mobile_dev_community_challenge/ui/widgets/ReusableWidgets.dart';
 import 'package:mobile_dev_community_challenge/ui/widgets/inputs/dropdown.dart';
-
 import '../style/colors.dart';
 import '../style/texts.dart';
 
@@ -40,6 +38,7 @@ class SecondScreen extends StatelessWidget {
               //     onChanged: onChanged
               // ),
               Container(
+
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   mainAxisAlignment: MainAxisAlignment.center,
