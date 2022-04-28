@@ -88,3 +88,40 @@ TextStyle kButtonTextStyle = const TextStyle(
   color: Colors.white,
   fontSize: 15,
 );
+
+TextStyle kHeaderTextStyle = const TextStyle(
+  fontFamily: 'GT Walsheim Pro',
+  fontSize: 25,
+  fontWeight: FontWeight.w500,
+  color: Color(0xff040B45),
+  fontStyle: FontStyle.normal,
+);
+
+TextStyle kMainHeaderTextStyle = const TextStyle(
+  fontFamily: 'GT Walsheim Pro',
+  fontSize: 35,
+  fontWeight: FontWeight.w700,
+  color: Color(0xff040B45),
+  fontStyle: FontStyle.normal,
+);
+
+TextStyle kHeader1TextStyle = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w300,
+  fontSize: 25,
+  color: Color(0xff504F4F),
+);
+
+TextStyle kContainerTextStyle = const TextStyle(
+    fontFamily: 'GT Walsheim Pro',
+    fontSize: 15,
+    fontWeight: FontWeight.w700,
+    color: Color(0xff040B45),
+    fontStyle: FontStyle.normal);
+
+TextStyle kHeader2TextStyle = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w300,
+  fontSize: 20,
+  color: Color(0xff504F4F),
+);
