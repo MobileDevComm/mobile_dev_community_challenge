@@ -1,0 +1,4 @@
+#Thu Apr 28 03:40:15 PDT 2022
+base.0=C\:\\Users\\ENNY\\Documents\\GitHub\\mobile_dev_community_challenge\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
