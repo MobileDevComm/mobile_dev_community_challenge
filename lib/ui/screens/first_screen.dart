@@ -261,7 +261,28 @@ class FirstScreen extends StatelessWidget {
                 ),
               ],
             ),
-            MyList()
+            // ignore: prefer_const_literals_to_create_immutables
+            const MyList(
+              amountColor: Colors.green,
+              amountText: '+\$2,000',
+              imageText: 'images/Ellipse 758.png',
+              paymentText: 'Payment from Ogunlade J.',
+              timeText: 'Yesterday at 10am',
+            ),
+            const MyList(
+              amountColor: Colors.red,
+              amountText: '-\$2,000',
+              imageText: 'images/Ellipse 760.png',
+              paymentText: 'withdrawal to 345***',
+              timeText: 'Yesterday at 10pm',
+            ),
+            // const MyList(
+            //   amountColor: Colors.green,
+            //   amountText: '+\$2,000',
+            //   imageText: 'images/Ellipse 758.png',
+            //   paymentText: 'Payment from Ogunlade J.',
+            //   timeText: 'Yesterday at 10am',
+            // )
           ],
         ),
       ),
@@ -307,14 +328,14 @@ class MyList extends StatelessWidget {
             paymentText,
             style: const TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 15,
+              fontSize: 9,
             ),
           ),
         ],
       ),
       subtitle: Container(
         margin: const EdgeInsets.symmetric(horizontal: 13),
-        child: Text(timeText),
+        child: Text(timeText, style: const TextStyle(fontSize: 9)),
       ),
       trailing: Text(amountText,
           style: TextStyle(
