@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:mobile_dev_community_challenge/ui/style/style.dart';
 import 'package:mobile_dev_community_challenge/ui/widgets/buttons/base_button.dart';
 
+import '../classes/document_container.dart';
+import '../classes/document_container2.dart';
+import '../classes/image_container.dart';
+
 class DocumentUploads1 extends StatelessWidget {
   const DocumentUploads1({Key? key}) : super(key: key);
 
@@ -27,7 +31,7 @@ class DocumentUploads1 extends StatelessWidget {
                           color: const Color.fromRGBO(149, 160, 252, 0.15),
                           borderRadius: BorderRadius.circular(10)),
                       child: const Image(
-                        image: AssetImage('assets/pngs/Vector.png'),
+                        image: AssetImage('assets/pngs/arrow_back.png'),
                       ),
                     ),
                     const SizedBox(
@@ -152,16 +156,7 @@ class DocumentUploads1 extends StatelessWidget {
                     TextSpan(
                         text: 'Every upload is subjected to ',
                         style: kHeader2TextStyle),
-                    const TextSpan(
-                      text: 'review',
-                      style: TextStyle(
-                          color: Color(0xff040B45),
-                          decoration: TextDecoration.underline,
-                          decorationThickness: 2,
-                          decorationColor: Color(0xff040B45),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20),
-                    )
+                    TextSpan(text: 'review', style: kRichTextStyle)
                   ]),
                 ),
               ),
@@ -181,168 +176,5 @@ class DocumentUploads1 extends StatelessWidget {
             ],
           ),
         ));
-  }
-}
-
-class ImageContainer extends StatelessWidget {
-  final AssetImage display;
-  const ImageContainer({
-    Key? key,
-    required this.display,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(image: display),
-      ),
-    );
-  }
-}
-
-class DocumentContainer extends StatelessWidget {
-  const DocumentContainer({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 206,
-      width: 159,
-      margin: const EdgeInsets.all(8),
-      decoration: BoxDecoration(
-        color: const Color(0xFFFFFFFF),
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: const Color(0xffbbbbbb), width: 1),
-      ),
-      child: Stack(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(bottom: 59),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/pngs/scroll.png'),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 65),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/pngs/dash.png'),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 59),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/pngs/dash.png'),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 52),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/pngs/dash.png'),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 50),
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: Text(
-                'Electricity or \n   Utility Bill',
-                style: kContainerTextStyle,
-              ),
-            ),
-          )
-        ],
-      ),
-    );
-  }
-}
-
-class DcocumentContainer2 extends StatelessWidget {
-  const DcocumentContainer2({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 206,
-      width: 159,
-      margin: const EdgeInsets.all(8),
-      decoration: BoxDecoration(
-        color: const Color(0xFFFFFFFF),
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: const Color(0xffbbbbbb), width: 1),
-      ),
-      child: Stack(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(bottom: 55),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/pngs/bodybrow.png'),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 51),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/pngs/downbrow.png'),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 75),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/pngs/upbrow.png'),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 64),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/pngs/star.png'),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 50),
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: Text(
-                '        CAC\nCertification',
-                style: kContainerTextStyle,
-              ),
-            ),
-          )
-        ],
-      ),
-    );
   }
 }

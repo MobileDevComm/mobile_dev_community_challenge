@@ -125,3 +125,32 @@ TextStyle kHeader2TextStyle = const TextStyle(
   fontSize: 20,
   color: Color(0xff504F4F),
 );
+
+TextStyle kHeader3TextStyle = const TextStyle(
+  fontFamily: 'GT Walsheim Pro',
+  fontSize: 20,
+  fontWeight: FontWeight.w300,
+  color: Color(0xff040B45),
+  fontStyle: FontStyle.normal,
+);
+
+TextStyle kDropDownTextStyle = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w300,
+  fontSize: 20,
+  color: Color(0xff504F4F),
+);
+
+TextStyle kDottedContainerStyle = const TextStyle(
+    color: Colors.grey,
+    fontFamily: 'SF Pro Display',
+    fontSize: 15,
+    fontWeight: FontWeight.w500);
+
+TextStyle kRichTextStyle = const TextStyle(
+    color: Color(0xff040B45),
+    decoration: TextDecoration.underline,
+    decorationThickness: 2,
+    decorationColor: Color(0xff040B45),
+    fontWeight: FontWeight.bold,
+    fontSize: 20);
