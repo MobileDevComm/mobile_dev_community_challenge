@@ -4,8 +4,10 @@ import 'package:mobile_dev_community_challenge/utils/extensions.dart';
 import '../style/style.dart';
 
 class DocumentDropDown extends StatelessWidget {
+  final String text;
   const DocumentDropDown({
     Key? key,
+    required this.text,
   }) : super(key: key);
 
   @override
@@ -23,7 +25,7 @@ class DocumentDropDown extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 24),
           child: Text(
-            'Select ID',
+            text,
             textAlign: TextAlign.center,
             style: kDropDownTextStyle,
           ),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/document_uploads1.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/document_uploads2.dart';
+import 'package:mobile_dev_community_challenge/ui/screens/laundry_services.dart';
+import 'package:mobile_dev_community_challenge/ui/screens/laundry_services2.dart';
 
 import 'ui/style/colors.dart';
 import 'ui/style/themes.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
       title: 'Challenge App',
       debugShowCheckedModeBanner: false,
       theme: kThemeData,
-      home: const DocumentUploads2(),
+      home: const LaundryServices2(),
     );
   }
 }

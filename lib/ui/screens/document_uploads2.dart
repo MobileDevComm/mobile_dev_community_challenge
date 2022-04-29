@@ -1,10 +1,12 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_dev_community_challenge/ui/classes/arrow_container.dart';
 import 'package:mobile_dev_community_challenge/utils/extensions.dart';
 
 import '../classes/document_dropdown.dart';
 import '../style/style.dart';
 import '../widgets/buttons/base_button.dart';
+import '../widgets/buttons/build_dash_container.dart';
 
 class DocumentUploads2 extends StatelessWidget {
   const DocumentUploads2({Key? key}) : super(key: key);
@@ -24,16 +26,7 @@ class DocumentUploads2 extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Container(
-                    height: 49,
-                    width: 74,
-                    decoration: BoxDecoration(
-                        color: const Color.fromRGBO(149, 160, 252, 0.15),
-                        borderRadius: BorderRadius.circular(10)),
-                    child: const Image(
-                      image: AssetImage('assets/pngs/arrow_back.png'),
-                    ),
-                  ),
+                  const ArrowContainer(),
                   const SizedBox(
                     width: 30,
                   ),
@@ -77,7 +70,9 @@ class DocumentUploads2 extends StatelessWidget {
             ),
             const Padding(
               padding: EdgeInsets.only(left: 20, right: 20),
-              child: DocumentDropDown(),
+              child: DocumentDropDown(
+                text: 'Select ID',
+              ),
             ),
             const SizedBox(
               height: 30,
@@ -124,19 +119,4 @@ class DocumentUploads2 extends StatelessWidget {
       ),
     );
   }
-}
-
-Widget buildDashContainer({required Widget child}) {
-  return DottedBorder(
-    color: Colors.grey.shade200,
-    borderType: BorderType.RRect,
-    strokeWidth: 3,
-    dashPattern: const [11, 10],
-    radius: const Radius.circular(20),
-    child: Container(
-      padding: const EdgeInsets.all(90),
-      child: Text('       Click to browse or\ndrag and drag cover photo',
-          style: kDottedContainerStyle),
-    ),
-  );
 }

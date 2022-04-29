@@ -138,11 +138,11 @@ TextStyle kDropDownTextStyle = const TextStyle(
   fontFamily: 'Apercu',
   fontWeight: FontWeight.w300,
   fontSize: 20,
-  color: Color(0xff504F4F),
+  color: Color(0xff5E5E5E),
 );
 
-TextStyle kDottedContainerStyle = const TextStyle(
-    color: Colors.grey,
+TextStyle kDottedContainerStyle = TextStyle(
+    color: const Color(0XFF242634).withOpacity(0.5),
     fontFamily: 'SF Pro Display',
     fontSize: 15,
     fontWeight: FontWeight.w500);
@@ -154,3 +154,24 @@ TextStyle kRichTextStyle = const TextStyle(
     decorationColor: Color(0xff040B45),
     fontWeight: FontWeight.bold,
     fontSize: 20);
+
+TextStyle kSuitStyle = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w400,
+  fontSize: 20,
+  color: Color(0xff2F2F2F),
+);
+
+TextStyle kCategoryStyle = const TextStyle(
+    fontFamily: 'GT Walsheim Pro',
+    fontSize: 20,
+    fontWeight: FontWeight.w400,
+    color: Color(0xff2FCF5F));
+
+TextStyle kHeader4TextStyle = const TextStyle(
+  fontFamily: 'GT Walsheim Pro',
+  fontSize: 20,
+  fontWeight: FontWeight.w500,
+  color: Color(0xff040B45),
+  fontStyle: FontStyle.normal,
+);
