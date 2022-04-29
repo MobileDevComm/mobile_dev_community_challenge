@@ -15,7 +15,7 @@ class FirstScreen extends StatelessWidget {
             children:[
             Row(
               children :[
-              const arrowLeftIcon(),
+              const ArrowLeftIcon(),
               Text('Upload Documents', style:kHeadline3TextStyle),
             ],
             ),
@@ -34,7 +34,7 @@ class FirstScreen extends StatelessWidget {
               ],
             ),
             ReusableContainer1(svgLogoURI: 'assets/svgs/badge 1.svg', text: 'CAC certification',),
-            const reviewSentence( ),
+            const ReviewSentence( ),
             BottomContainer1(bottomContainerText: 'SAVE CHANGES',)
           ]
         ),

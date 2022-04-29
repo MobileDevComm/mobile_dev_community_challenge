@@ -18,7 +18,7 @@ class SecondScreen extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const arrowLeftIcon( ),
+                  const ArrowLeftIcon( ),
                   Padding(
                     padding: const EdgeInsets.only(left: 50.0),
                     child: Text('Upload Documents', style:kHeadline3TextStyle,),
@@ -45,26 +45,36 @@ class SecondScreen extends StatelessWidget {
                   const DropdownInput(
                     items: ['Select ID'],
                   ),
-                  Container(
-                    margin: const EdgeInsets.fromLTRB(20,0,20,10),
-                      child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text('Select ID', style:kButtonTextStyle),
-
-                      ],
-                    )
-                  ),
+                  SelectionContainer(),
                   const PictureContainer1( )
                 ]
               ),
-              const reviewSentence(),
+              const ReviewSentence(),
               BottomContainer1(bottomContainerText: 'UPLOAD DOCUMENT',)
             ],
           ),
         ),
       ),
+    );
+  }
+}
+
+class SelectionContainer extends StatelessWidget {
+  const SelectionContainer({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.fromLTRB(20,0,20,10),
+        child: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Select ID', style:kButtonTextStyle),
+        ],
+      )
     );
   }
 }
