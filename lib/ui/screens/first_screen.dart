@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/widgets/components/nav.dart';
-import 'package:mobile_dev_community_challenge/ui/screens/widgets/components/navbar.dart';
+//import 'package:mobile_dev_community_challenge/ui/screens/widgets/components/navbar.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/widgets/lift.dart';
 import 'package:mobile_dev_community_challenge/ui/widgets/components/scroll.dart';
 
