@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_dev_community_challenge/ui/screens/widgets/components/nav.dart';
+import 'package:mobile_dev_community_challenge/ui/screens/widgets/components/navbar.dart';
+import 'package:mobile_dev_community_challenge/ui/screens/widgets/lift.dart';
 import 'package:mobile_dev_community_challenge/ui/widgets/components/scroll.dart';
 
 import '../style/colors.dart';
@@ -233,9 +236,9 @@ class FirstScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 RichText(
-                  text: TextSpan(
+                  text: const TextSpan(
                     text: 'Recent ',
-                    style: const TextStyle(
+                    style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.normal,
                         color: Colors.black45),
@@ -243,7 +246,7 @@ class FirstScreen extends StatelessWidget {
                       TextSpan(
                         text: 'Transactions',
                         style: TextStyle(
-                            fontSize: height * 0.02,
+                            fontSize: 15,
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.normal,
                             color: Colors.black),
@@ -251,10 +254,10 @@ class FirstScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                Text(
+                const Text(
                   'View All',
                   style: TextStyle(
-                      fontSize: height * 0.02,
+                      fontSize: 13,
                       fontWeight: FontWeight.normal,
                       fontStyle: FontStyle.normal,
                       color: Color.fromARGB(255, 185, 182, 182)),
@@ -276,71 +279,10 @@ class FirstScreen extends StatelessWidget {
               paymentText: 'withdrawal to 345***',
               timeText: 'Yesterday at 10pm',
             ),
-            // const MyList(
-            //   amountColor: Colors.green,
-            //   amountText: '+\$2,000',
-            //   imageText: 'images/Ellipse 758.png',
-            //   paymentText: 'Payment from Ogunlade J.',
-            //   timeText: 'Yesterday at 10am',
-            // )
+            const MyNavBar()
           ],
         ),
       ),
-    );
-  }
-}
-
-class MyList extends StatelessWidget {
-  const MyList({
-    Key? key,
-    required this.imageText,
-    required this.paymentText,
-    required this.timeText,
-    required this.amountText,
-    required this.amountColor,
-  }) : super(key: key);
-
-  final String imageText;
-  final String paymentText;
-  final String timeText;
-  final String amountText;
-  final Color amountColor;
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      // leading: Image.asset(
-      //   'images/Ellipse 758.png',
-      //   scale: 1,
-      // ),
-      title: Row(
-        crossAxisAlignment: CrossAxisAlignment.baseline,
-        textBaseline: TextBaseline.alphabetic,
-        children: [
-          Image.asset(
-            imageText,
-            scale: 1,
-          ),
-          const SizedBox(
-            width: 10,
-          ),
-          Text(
-            paymentText,
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 9,
-            ),
-          ),
-        ],
-      ),
-      subtitle: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 13),
-        child: Text(timeText, style: const TextStyle(fontSize: 9)),
-      ),
-      trailing: Text(amountText,
-          style: TextStyle(
-            color: amountColor,
-          )),
     );
   }
 }
