@@ -189,3 +189,30 @@ TextStyle kLatinTextStyle2 = const TextStyle(
     fontSize: 18,
     color: Color(0xff040B45),
     height: 2);
+
+TextStyle kSmallStyle = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w400,
+  fontSize: 12,
+  color: Color.fromRGBO(4, 11, 69, 0.7),
+);
+
+TextStyle kLatinTextStyle3 = const TextStyle(
+    fontFamily: 'Apercu',
+    fontWeight: FontWeight.w300,
+    fontSize: 16,
+    color: Color.fromRGBO(4, 11, 69, 0.50),
+    height: 2);
+
+TextStyle kHeader5TextStyle = const TextStyle(
+    fontFamily: 'GT Walsheim Pro',
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: Color(0xff040B45));
+
+TextStyle kMiniTextStyle = const TextStyle(
+  fontFamily: 'GT Walsheim Pro',
+  fontWeight: FontWeight.w400,
+  fontSize: 15,
+  color: Color.fromRGBO(4, 11, 69, 0.7),
+);

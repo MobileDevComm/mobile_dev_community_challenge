@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_dev_community_challenge/utils/extensions.dart';
 
-import '../style/style.dart';
+import '../widgets/buttons/bedspread_container.dart';
+import '../widgets/buttons/women_container.dart';
 
 class CustomDocumentDropDown extends StatelessWidget {
   const CustomDocumentDropDown({
@@ -21,34 +22,12 @@ class CustomDocumentDropDown extends StatelessWidget {
           border: Border.all(color: const Color(0xffbbbbbb), width: 1)),
       child: Stack(alignment: Alignment.center, children: [
         Row(
-          children: [
-            Container(
-              height: 50,
-              width: 140,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  color: const Color(0xffEFF1FF),
-                  borderRadius: BorderRadius.circular(35)),
-              child: Text(
-                'BedSpreads',
-                style: kCategoryStyle,
-              ),
-            ),
-            const SizedBox(
+          children: const [
+            BedSpreadCont(),
+            SizedBox(
               width: 6,
             ),
-            Container(
-              height: 50,
-              width: 100,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  color: const Color(0xffEFF1FF),
-                  borderRadius: BorderRadius.circular(30)),
-              child: Text(
-                'Women',
-                style: kCategoryStyle,
-              ),
-            ),
+            WomenCont(),
           ],
         ),
         const Positioned(
