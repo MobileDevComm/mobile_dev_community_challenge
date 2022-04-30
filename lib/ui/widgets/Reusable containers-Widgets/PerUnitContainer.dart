@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import '../inputs/dropdown.dart';
 
 class PerUnitContainer extends StatelessWidget {
-  const PerUnitContainer({
-    Key? key,
-  }) : super(key: key);
-
+   PerUnitContainer({required this.dropDownItems  }) ;
+List <String> dropDownItems= [];
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,6 +13,9 @@ class PerUnitContainer extends StatelessWidget {
           color: Color(0xFFE5E5E5),
           borderRadius:BorderRadius.circular(10),
         ),
-        child: const  DropdownInput(items: [ 'Per Unit'],));
+        child:
+        DropdownInput(
+           items: dropDownItems
+          ,));
   }
 }

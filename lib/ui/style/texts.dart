@@ -45,6 +45,13 @@ TextStyle kHeadline6TextStyle = const TextStyle(
   color: AppColor.textPrimary,
   fontSize: 26,
 );
+TextStyle kHeadline7TextStyle = const TextStyle(
+  fontFamily: AppFont.heading,
+  fontWeight: FontWeight.normal,
+  color: Color(0xff040B45),
+  fontSize: 16,
+);
+
 
 TextStyle kSubtitle1TextStyle = const TextStyle(
   fontFamily: AppFont.body,
@@ -90,8 +97,10 @@ TextStyle kButtonTextStyle = const TextStyle(
   fontSize: 15,
 );
 TextStyle kBottomContainerText = const TextStyle(
+  fontFamily: AppFont.body,
   color: Colors.white,
   fontWeight: FontWeight.bold,
+  fontSize: 15,
 );
 TextStyle kTopSentenceBottomContainerText = const TextStyle(
 color: Colors.purple,

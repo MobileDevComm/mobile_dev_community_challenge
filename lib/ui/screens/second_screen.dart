@@ -39,14 +39,14 @@ class SecondScreen extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('Identity Type', style: kHeadline4TextStyle,),
+                    child: Text('Identity Type', style:  kHeadline7TextStyle,),
                   ),
                   //DropdownButton(items: items, onChanged: onChanged),
                   const DropdownInput(
                     items: ['Select ID'],
                   ),
-                  SelectionContainer(),
-                  const PictureContainer1( )
+                  const SelectionContainer(),
+                  PictureContainer1( )
                 ]
               ),
               const ReviewSentence(),
@@ -59,23 +59,4 @@ class SecondScreen extends StatelessWidget {
   }
 }
 
-class SelectionContainer extends StatelessWidget {
-  const SelectionContainer({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.fromLTRB(20,0,20,10),
-        child: Row(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text('Select ID', style:kButtonTextStyle),
-        ],
-      )
-    );
-  }
-}
 

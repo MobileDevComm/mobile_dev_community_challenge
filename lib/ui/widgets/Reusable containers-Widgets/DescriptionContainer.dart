@@ -4,23 +4,24 @@ import '../../style/colors.dart';
 
 
 class DescriptionContainer extends StatelessWidget {
-  const DescriptionContainer({
-    Key? key,
-  }) : super(key: key);
-
+   DescriptionContainer({required this.descriptionText, required this.maxLines});
+ String descriptionText;
+int  maxLines=3;
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 329,
       //height: 162,
-      child: const TextField(
-        maxLines: 5,
+      child:  TextField(
+        maxLines: maxLines,
         decoration:
-        InputDecoration(
-          border: OutlineInputBorder(
+         InputDecoration(
+          border: const OutlineInputBorder(
               borderSide: BorderSide(width: 1, color: Color(0xffBBBBBB))
           ),
-          hintText: 'Include all needed information',hintStyle: TextStyle( fontFamily: AppFont.body,
+          hintText: descriptionText,hintStyle:
+         const TextStyle(
+           fontFamily: AppFont.body,
           fontWeight: FontWeight.normal,
           color: AppColor.textPrimary,
           fontSize: 14,

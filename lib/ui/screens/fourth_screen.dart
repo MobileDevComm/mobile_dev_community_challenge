@@ -1,11 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:mobile_dev_community_challenge/ui/widgets/inputs/dropdown.dart';
 import '../style/texts.dart';
 import '../widgets/ReusableWidgets.dart';
 
-class ThirdScreen extends StatelessWidget {
-  const ThirdScreen({Key? key}) : super(key: key);
+
+class FourthScreen extends StatelessWidget {
+  const FourthScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,26 +30,25 @@ class ThirdScreen extends StatelessWidget {
                 Text('Create a Service', style:kHeadline2TextStyle ,),
                 const SizedBox(height: 5,),
                 Text('Service Name',style: kHeadline7TextStyle,),
-                 const ServiceNameContainer(),
+                const ServiceNameContainer(),
                 const SizedBox(height:15),
-                 Column(
-                   children: [
-                     Text('Service Description',style: kHeadline7TextStyle),
-                      DescriptionContainer(descriptionText: 'include all needed information', maxLines: 5,),
-                   ],
-                 ),
+                Column(
+                  children: [
+                    Text('Service Description',style: kHeadline7TextStyle),
+                     DescriptionContainer(descriptionText: 'Short Description', maxLines: 3,),
+                  ],
+                ),
                 const SizedBox(height:15),
-
                 Column(
                   children: [
                     Text('Amount (In Naira)', style:kHeadline7TextStyle),
                     Row(
-                      children:   [
+                      children:  [
                         const Padding(
                           padding: EdgeInsets.only(left: 8.0, top:0, right:8.0, bottom: 8.0),
                           child: AmountContainer(),
                         ),
-                        PerUnitContainer(dropDownItems: const ['Per Unit']),
+                        PerUnitContainer(dropDownItems: const ['Per Unit'],),
                       ],
                     ),
                   ],
@@ -58,17 +57,20 @@ class ThirdScreen extends StatelessWidget {
                 Column(
                   children: [
                     Text('Select Category',style: kHeadline7TextStyle),
-                     const Padding(
-                       padding: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 8.0),
-                       child: DropdownInput(
-                        items: ['Select Category'],
+                    const Padding(
+                      padding: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 8.0),
+                      child: DropdownInput(
+                        items: ['Bed-Spread', 'Wome'],
+                      ),
                     ),
-                     ),
                   ],
                 ),
                 const SizedBox(height: 15,),
-                PictureContainer1( backgroundText: 'click to browse or\n drag and drop photo',),
-                 const SizedBox(height: 25,),
+                Text('Add Product Image ',style: kHeadline7TextStyle),
+                const SizedBox(height: 5,),
+                 PictureContainer1(backgroundPicture: 'assets/images/shirt.png', ),
+                const Text('Delete Image', textAlign: TextAlign.right,style: TextStyle(color: Color(0xFF040B45 )),),
+                const SizedBox(height: 25,),
                 BottomContainer1(bottomContainerText: 'CONTINUE',)
               ],
             ),
