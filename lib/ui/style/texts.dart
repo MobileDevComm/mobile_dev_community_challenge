@@ -175,3 +175,17 @@ TextStyle kHeader4TextStyle = const TextStyle(
   color: Color(0xff040B45),
   fontStyle: FontStyle.normal,
 );
+
+TextStyle kLatinTextStyle = const TextStyle(
+    fontFamily: 'Apercu',
+    fontWeight: FontWeight.w300,
+    fontSize: 18,
+    color: Color.fromRGBO(4, 11, 69, 0.61),
+    height: 2);
+
+TextStyle kLatinTextStyle2 = const TextStyle(
+    fontFamily: 'Apercu',
+    fontWeight: FontWeight.w300,
+    fontSize: 18,
+    color: Color(0xff040B45),
+    height: 2);
