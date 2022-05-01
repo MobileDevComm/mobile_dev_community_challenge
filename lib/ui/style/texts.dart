@@ -81,6 +81,40 @@ TextStyle kBodyText2TextStyle = const TextStyle(
   fontSize: 12,
 );
 
+TextStyle kBodyText3TextStyle =const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.normal,
+  color:Color.fromRGBO( 4, 11, 69,0.59,),
+  fontSize: 15,
+);
+
+TextStyle kBodyText4TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.normal,
+  color: Color(0xFF05E5E5E ),
+  fontSize: 16,
+);
+TextStyle kBodyText5TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.bold,
+  color: Color(0xFF2F2F2F ),
+  fontSize: 16,
+);
+
+TextStyle kBodyText6TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.bold,
+  color: Color(0xFF040B45 ),
+  fontSize: 14,
+);
+
+TextStyle kBodyText7TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.bold,
+    color: Color(0xFF2FCF5F ),
+  fontSize: 14,
+);
+
 TextStyle kCaptionTextStyle = const TextStyle(
   fontFamily: AppFont.heading,
   fontWeight: FontWeight.normal,

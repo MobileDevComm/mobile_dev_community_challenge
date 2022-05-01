@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../style/app_fonts.dart';
-import '../../style/colors.dart';
+import '../../style/texts.dart';
 
 
 class DescriptionContainer extends StatelessWidget {
@@ -16,16 +15,11 @@ int  maxLines=3;
         maxLines: maxLines,
         decoration:
          InputDecoration(
-          border: const OutlineInputBorder(
+          border:  const OutlineInputBorder(
               borderSide: BorderSide(width: 1, color: Color(0xffBBBBBB))
           ),
-          hintText: descriptionText,hintStyle:
-         const TextStyle(
-           fontFamily: AppFont.body,
-          fontWeight: FontWeight.normal,
-          color: AppColor.textPrimary,
-          fontSize: 14,
-        ),
+          hintText: descriptionText,
+             hintStyle: kBodyText4TextStyle
         ) ,
       ),
     );

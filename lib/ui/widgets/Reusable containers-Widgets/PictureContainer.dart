@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class PictureContainer1 extends StatelessWidget {
    PictureContainer1({ this.backgroundPicture, this.backgroundText  }) ;
-String ?backgroundPicture;
+String ? backgroundPicture;
 String ?backgroundText;
   @override
   Widget build(BuildContext context) {
