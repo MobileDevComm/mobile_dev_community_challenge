@@ -55,6 +55,10 @@ static const Color backButton = Color.fromRGBO(149, 160, 252, 0.15);
 //for the bottom navigation button
   static const bottomContainerColor = Color(0xFF2FCF5F);
 
+  //for the bottom navigation button
+  static const bottomContainer2Color = Color(0xFFF4F6FF);
+
+
   //Title texts, captions, inputs fields and everywhere else where black is required
   static const Color textPrimary = Color(0xFF25282B);
 
