@@ -11,32 +11,48 @@ class FirstScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.scaffoldBgColor,
       body:SafeArea(
-        child: Column(
-            children:[
-            Row(
-              children :[
-              const ArrowLeftIcon(),
-              Text('Upload Documents', style:kHeadline3TextStyle),
-            ],
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+                children:[
+                Row(
+                  children :[
+                  const ArrowLeftIcon(),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 50.0),
+                    child: Text('Upload Documents', style:kHeadline3TextStyle),
+                  ),
+                ],
+                ),
+                  const SizedBox(height: 40,),
+                Align(
+                  alignment: AlignmentDirectional.centerStart,
+                  child: Column (
+                    children: [
+                      Text('Upload Documents', style:kHeadline2TextStyle ,),
+                      const SizedBox(height: 7,),
+                      Text('Enter the OTP that was sent to your ',style:kBodyText1TextStyle,),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 30,),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children:[
+                    ReusableContainer1(svgLogoURI: 'assets/svgs/name 1.svg', text: 'Valid Identification Card',),
+                    Expanded(child: ReusableContainer1(svgLogoURI: 'assets/svgs/Vector.svg', text: 'Electricity or Utility Bill',)),
+                  ],
+                ),
+                Align(
+                  alignment: AlignmentDirectional.centerStart,
+                    child: ReusableContainer1(svgLogoURI: 'assets/svgs/badge 1.svg', text: 'CAC Certification',),
+                ),
+                const ReviewSentence( ),
+                BottomContainer1(bottomContainerText: 'SAVE CHANGES',)
+              ]
             ),
-            Column (
-              children: [
-                Text('Upload Documents', style:kHeadline2TextStyle ,),
-                Text('Enter the OTP that was sent to your ',style:kBodyText1TextStyle,),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children:[
-                ReusableContainer1(svgLogoURI: 'assets/svgs/name 1.svg', text: 'Valid Identification Card',),
-                ReusableContainer1(svgLogoURI: 'assets/svgs/Vector.svg', text: 'Electricity or Utility Bill',),
-              ],
-            ),
-            ReusableContainer1(svgLogoURI: 'assets/svgs/badge 1.svg', text: 'CAC certification',),
-            const ReviewSentence( ),
-            BottomContainer1(bottomContainerText: 'SAVE CHANGES',)
-          ]
+          ),
         ),
       )
     );

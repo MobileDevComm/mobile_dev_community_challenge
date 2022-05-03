@@ -15,8 +15,9 @@ int  maxLines=3;
         maxLines: maxLines,
         decoration:
          InputDecoration(
-          border:  const OutlineInputBorder(
-              borderSide: BorderSide(width: 1, color: Color(0xffBBBBBB))
+          border:   OutlineInputBorder(
+            borderRadius:BorderRadius.circular(10.0),
+              borderSide: BorderSide(width: 2, color: Color(0xffBBBBBB))
           ),
           hintText: descriptionText,
              hintStyle: kBodyText4TextStyle

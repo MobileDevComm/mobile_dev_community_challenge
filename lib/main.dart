@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 //import 'package:mobile_dev_community_challenge/ui/screens/fifth_Screen.dart';
-import 'package:mobile_dev_community_challenge/ui/screens/sixth_SuccessScren.dart';
-//import 'package:mobile_dev_community_challenge/ui/screens/fourth_screen.dart';
+//import 'package:mobile_dev_community_challenge/ui/screens/sixth_SuccessScren.dart';
+import 'package:mobile_dev_community_challenge/ui/screens/fourth_screen.dart';
+import 'package:mobile_dev_community_challenge/ui/screens/seventh_aboutService.dart';
 //import 'package:mobile_dev_community_challenge/ui/screens/first_screen.dart';
 //import 'package:mobile_dev_community_challenge/ui/screens/second_screen.dart';
 //import 'package:mobile_dev_community_challenge/ui/screens/third_screen.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       title: 'Challenge App',
       debugShowCheckedModeBanner: false,
       theme: kThemeData,
-      home: SuccessScreen(),
+      home: AboutScreen(),
     );
   }
 }

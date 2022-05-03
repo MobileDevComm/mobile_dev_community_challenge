@@ -14,14 +14,14 @@ TextStyle kHeadline1TextStyle = const TextStyle(
 TextStyle kHeadline2TextStyle = const TextStyle(
   fontFamily: AppFont.heading,
   fontWeight: FontWeight.bold,
-  color: AppColor.textPrimary,
+  color:Color(0xFF040B45 ),
   fontSize: 26,
 );
 
 TextStyle kHeadline3TextStyle = const TextStyle(
   fontFamily: AppFont.heading,
-  fontWeight: FontWeight.bold,
-  color: AppColor.textPrimary,
+  fontWeight: FontWeight.w500,
+  color: Color.fromRGBO(4, 11, 69, 1),
   fontSize: 20,
 );
 
@@ -58,6 +58,35 @@ TextStyle kHeadline8TextStyle = const TextStyle(
   color: Color(0xff040B45),
   fontSize: 23,
 );
+
+TextStyle kHeadline9TextStyle = const TextStyle(
+  fontFamily: AppFont.heading,
+  fontWeight: FontWeight.w400,
+  color: Color.fromRGBO(4, 11, 69, 1),
+  fontSize: 14,
+);
+
+TextStyle kHeadline10TextStyle = const TextStyle(
+  fontFamily: AppFont.heading,
+  fontWeight: FontWeight.w400,
+  color: Color(0xff2FCF5F),
+  fontSize: 12,
+);
+
+TextStyle kButton1TextStyle = const TextStyle(
+  fontFamily: AppFont.heading,
+  fontWeight: FontWeight.w400,
+  color: Color.fromRGBO(4, 11, 69, 0.7),
+  fontSize: 14,
+);
+
+TextStyle kButton2TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.w700,
+  color: Color.fromRGBO(4, 11, 69, 1),
+  fontSize: 14,
+);
+
 
 
 TextStyle kSubtitle1TextStyle = const TextStyle(
@@ -129,11 +158,33 @@ TextStyle kBodyText8TextStyle = const TextStyle(
   fontSize: 16,
 );
 
+TextStyle kBodyText9TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.bold,
+  color: Color(0xFF2FCF5F ),
+  fontSize: 17,
+);
+
+TextStyle kBodyText10TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.w400,
+  color: Color.fromRGBO(4, 11, 69, 0.7),
+  fontSize: 12,
+);
+
+TextStyle kBodyText11TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.w300,
+  color: Color.fromRGBO(4, 11, 69, 0.5),
+  fontSize: 15,
+);
+
+
 
 TextStyle kCaptionTextStyle = const TextStyle(
   fontFamily: AppFont.heading,
-  fontWeight: FontWeight.normal,
-  color: AppColor.textPrimary,
+  fontWeight: FontWeight.bold,
+  color: Color(0xFF040B45 ),
   fontSize: 12,
 );
 

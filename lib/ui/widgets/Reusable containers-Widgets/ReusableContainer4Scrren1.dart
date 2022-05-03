@@ -16,7 +16,7 @@ class ReusableContainer1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: EdgeInsets.all(5),
       width: 159,
       height: 206,
       decoration: BoxDecoration(
@@ -27,7 +27,9 @@ class ReusableContainer1 extends StatelessWidget {
       child:Center(
         child: Column(
           children: [
+            SizedBox(height: 40,),
             SvgPicture.asset( svgLogoURI),
+            SizedBox(height: 40,),
             Text (text, style: kCaptionTextStyle, ),
           ],
         ),

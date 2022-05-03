@@ -15,7 +15,7 @@ class ThirdScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Row(
@@ -28,38 +28,42 @@ class ThirdScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 15,),
                 Text('Create a Service', style:kHeadline2TextStyle ,),
-                const SizedBox(height: 5,),
+                const SizedBox(height: 15,),
                 Text('Service Name',style: kHeadline7TextStyle,),
                  const ServiceNameContainer(),
                 const SizedBox(height:15),
                  Column(
+                   crossAxisAlignment: CrossAxisAlignment.start,
                    children: [
                      Text('Service Description',style: kHeadline7TextStyle),
-                      DescriptionContainer(descriptionText: 'include all needed information', maxLines: 5,),
+                      DescriptionContainer(descriptionText: 'Include all needed information', maxLines: 5,),
                    ],
                  ),
                 const SizedBox(height:15),
 
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('Amount (In Naira)', style:kHeadline7TextStyle),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children:   [
                         const Padding(
-                          padding: EdgeInsets.only(left: 8.0, top:0, right:8.0, bottom: 8.0),
+                          padding: EdgeInsets.only( right:8.0, bottom: 8.0),
                           child: AmountContainer(),
                         ),
-                        PerUnitContainer(dropDownItems: const ['Per Unit']),
+                        Expanded(child: PerUnitContainer(dropDownItems: const ['Per Unit'])),
                       ],
                     ),
                   ],
                 ),
                 const SizedBox(height:15),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('Select Category',style: kHeadline7TextStyle),
                      const Padding(
-                       padding: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 8.0),
+                       padding: EdgeInsets.only(  bottom: 8.0),
                        child: DropdownInput(
                         items: ['Select Category'],
                     ),
