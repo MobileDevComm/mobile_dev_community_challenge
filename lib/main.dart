@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/about_service.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/document_uploads1.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/document_uploads2.dart';
-import 'package:mobile_dev_community_challenge/ui/screens/home_screen.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/home_screen1.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/laundry_services.dart';
 import 'package:mobile_dev_community_challenge/ui/screens/laundry_services2.dart';

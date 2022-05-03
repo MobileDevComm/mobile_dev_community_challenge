@@ -10,7 +10,7 @@ class OrderDetailsCont extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 110,
+      height: 170,
       width: 365,
       decoration: BoxDecoration(
         color: const Color(0xfff8f8f8),
@@ -20,38 +20,60 @@ class OrderDetailsCont extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 13, top: 10),
-            child: RichText(
-              text: TextSpan(children: [
-                TextSpan(
-                    text:
-                        'Order Total                                                ',
-                    style: kMiniTextStyle),
-                TextSpan(text: '#20,220', style: kTextSpan)
-              ]),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Order Total',
+                  style: kMiniTextStyle,
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  '#20,220',
+                  style: kTextSpan,
+                )
+              ],
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 10, top: 15),
-            child: RichText(
-              text: TextSpan(children: [
-                TextSpan(
-                    text:
-                        'Transaction Fee                                          ',
-                    style: kMiniTextStyle),
-                TextSpan(text: '-#400', style: kTextSpan1)
-              ]),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Transaction Fee',
+                  style: kMiniTextStyle,
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  '-#400',
+                  style: kTextSpan1,
+                )
+              ],
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 10, top: 10),
-            child: RichText(
-              text: TextSpan(children: [
-                TextSpan(
-                    text: 'Net Total                                  ',
-                    style: kHeader4TextStyle),
-                TextSpan(text: '+#19,820', style: kTextSpan2)
-              ]),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Net Total',
+                  style: kHeader4TextStyle,
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  '+#19,820',
+                  style: kTextSpan2,
+                )
+              ],
             ),
           ),
         ],
