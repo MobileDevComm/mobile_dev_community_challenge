@@ -216,3 +216,87 @@ TextStyle kMiniTextStyle = const TextStyle(
   fontSize: 15,
   color: Color.fromRGBO(4, 11, 69, 0.7),
 );
+
+TextStyle kCarousel = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w300,
+  fontSize: 19,
+  color: Color(0xffffffff),
+);
+
+TextStyle kCarousel2 = const TextStyle(
+    fontFamily: 'GT Walsheim Pro',
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color: Color(0xffffffff),
+    fontStyle: FontStyle.normal);
+
+TextStyle kCarousel3 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w300,
+  fontSize: 10,
+  color: Color(0xffffffff),
+);
+
+TextStyle kSuitStyle1 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w400,
+  fontSize: 20,
+  color: Color(0xff2fcf5f),
+);
+
+TextStyle kTextSpan = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w500,
+  fontSize: 16,
+  color: Color(0xff040B45),
+);
+
+TextStyle kTextSpan1 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w500,
+  fontSize: 16,
+  color: Color(0xffE52836),
+);
+
+TextStyle kTextSpan2 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w500,
+  fontSize: 16,
+  color: Color(0xff37CB95),
+);
+
+TextStyle kLatinTextStyle4 = const TextStyle(
+    fontFamily: 'Apercu',
+    fontWeight: FontWeight.w400,
+    fontSize: 15,
+    color: Color.fromRGBO(4, 11, 69, 0.50),
+    height: 2);
+
+TextStyle kTimeStyle = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w500,
+  fontSize: 20,
+  color: Color(0xff040B45),
+);
+
+TextStyle kTextSpan3 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w500,
+  fontSize: 20,
+  color: Color(0xff040B45),
+);
+
+TextStyle kListTile = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w400,
+  fontSize: 15,
+  color: Color.fromRGBO(4, 11, 69, 0.70),
+);
+
+TextStyle kListTile2 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w700,
+  fontSize: 20,
+  color: Color(0xff040B45),
+);
