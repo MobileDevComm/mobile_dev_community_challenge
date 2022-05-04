@@ -300,3 +300,53 @@ TextStyle kListTile2 = const TextStyle(
   fontSize: 20,
   color: Color(0xff040B45),
 );
+
+TextStyle kOrderTab = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w500,
+  fontSize: 17,
+  color: Color(0xff2fcf5f),
+);
+
+TextStyle kOrderTab2 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w400,
+  fontSize: 13,
+  color: Color.fromRGBO(4, 11, 69, 0.70),
+);
+
+TextStyle kDyeCont = const TextStyle(
+    fontFamily: 'GT Walsheim Pro',
+    fontSize: 17,
+    fontWeight: FontWeight.w900,
+    color: Color(0xffffffff),
+    fontStyle: FontStyle.normal);
+
+TextStyle kDyeCont1 = const TextStyle(
+    fontFamily: 'GT Walsheim Pro',
+    fontSize: 17,
+    fontWeight: FontWeight.w400,
+    color: Color(0xffffffff),
+    fontStyle: FontStyle.normal);
+
+TextStyle kRichTextStyle1 = const TextStyle(
+    color: Color(0xffffffff),
+    decoration: TextDecoration.underline,
+    decorationThickness: 1.5,
+    decorationColor: Color(0xffffffff),
+    fontWeight: FontWeight.bold,
+    fontSize: 20);
+
+TextStyle kOrderCont = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w500,
+  fontSize: 14,
+  color: Color(0xffEAFFF7),
+);
+
+TextStyle kOrderCont1 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w400,
+  fontSize: 15,
+  color: Color(0xff2fcf5f),
+);

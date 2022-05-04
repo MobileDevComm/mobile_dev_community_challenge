@@ -20,20 +20,23 @@ class AddCont extends StatelessWidget {
       child: Row(
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: context.screenWidth(2)),
+            padding: EdgeInsets.symmetric(horizontal: context.screenWidth(1)),
             child: const Icon(
               Icons.add,
               color: Color(0xff2FCF5F),
               size: 30,
             ),
           ),
-          const Text(
-            'ADD NEW',
-            style: TextStyle(
-                color: Color(0xff2FCF5F),
-                fontFamily: 'Apercu',
-                fontWeight: FontWeight.w700,
-                fontSize: 19),
+          TextButton(
+            onPressed: () {},
+            child: const Text(
+              'ADD NEW',
+              style: TextStyle(
+                  color: Color(0xff2FCF5F),
+                  fontFamily: 'Apercu',
+                  fontWeight: FontWeight.w700,
+                  fontSize: 19),
+            ),
           )
         ],
       ),
