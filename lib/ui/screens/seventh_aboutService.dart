@@ -105,7 +105,7 @@ class AboutScreen extends StatelessWidget {
                 const SizedBox(height: 7,),
                 ReusableContainer2(ContainerText: 'Fantaby Folding',ContainerPrice: '#220',),
                const SizedBox(height: 20,),
-                Align(
+               const Align(
                   alignment: AlignmentDirectional.centerEnd,
                     child: BottomCircularContainer())
               ],

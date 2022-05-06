@@ -58,6 +58,10 @@ static const Color backButton = Color.fromRGBO(149, 160, 252, 0.15);
   //for the bottom navigation button
   static const bottomContainer2Color = Color(0xFFF4F6FF);
 
+ static const CreditColor= Color.fromRGBO(55, 203, 149, 1);
+
+  static const DebitColor= Color.fromRGBO(229, 54, 40, 1);
+
 
   //Title texts, captions, inputs fields and everywhere else where black is required
   static const Color textPrimary = Color(0xFF25282B);
