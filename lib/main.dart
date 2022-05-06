@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       title: 'Challenge App',
       debugShowCheckedModeBanner: false,
       theme: kThemeData,
-      home: const MyOrder(),
+      home: const OrderDetails(),
     );
   }
 }

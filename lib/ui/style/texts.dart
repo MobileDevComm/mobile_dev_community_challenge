@@ -225,6 +225,7 @@ TextStyle kCarousel = const TextStyle(
 );
 
 TextStyle kCarousel2 = const TextStyle(
+    letterSpacing: 2.0,
     fontFamily: 'GT Walsheim Pro',
     fontSize: 20,
     fontWeight: FontWeight.bold,
@@ -232,9 +233,10 @@ TextStyle kCarousel2 = const TextStyle(
     fontStyle: FontStyle.normal);
 
 TextStyle kCarousel3 = const TextStyle(
+  letterSpacing: 2.0,
   fontFamily: 'Apercu',
   fontWeight: FontWeight.w300,
-  fontSize: 10,
+  fontSize: 12,
   color: Color(0xffffffff),
 );
 
@@ -350,3 +352,79 @@ TextStyle kOrderCont1 = const TextStyle(
   fontSize: 15,
   color: Color(0xff2fcf5f),
 );
+
+TextStyle kCarousel4 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w700,
+  fontSize: 19,
+  color: Color(0xff2F4FFF),
+);
+
+TextStyle kStacked = const TextStyle(
+  fontFamily: 'GT Walsheim Pro',
+  fontSize: 17,
+  fontWeight: FontWeight.w300,
+  color: Color.fromRGBO(4, 11, 69, 0.5),
+  fontStyle: FontStyle.normal,
+);
+
+TextStyle kBelowStack = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w300,
+  fontSize: 18,
+  color: Color(0xff040B45),
+);
+
+TextStyle kOrderNum = const TextStyle(
+    fontFamily: 'GT Walsheim Pro',
+    fontSize: 22,
+    fontWeight: FontWeight.w700,
+    color: Color(0xff120E59),
+    fontStyle: FontStyle.normal);
+
+TextStyle kOrderNum2 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w300,
+  fontSize: 14,
+  color: Color.fromRGBO(18, 14, 89, 0.82),
+);
+
+TextStyle kEmmaStyle = const TextStyle(
+    fontFamily: 'Inter',
+    color: Color(0xffffffff),
+    fontWeight: FontWeight.w400,
+    fontSize: 15);
+
+TextStyle kLone = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w400,
+  fontSize: 13,
+  color: Color(0xff767676),
+);
+
+TextStyle kOrderList = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w300,
+  fontSize: 15,
+  color: Color.fromRGBO(18, 14, 89, 0.70),
+);
+
+TextStyle kOrderList2 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w700,
+  fontSize: 16,
+  color: Color(0xff37CB95),
+);
+
+TextStyle kOrderList3 = const TextStyle(
+  fontFamily: 'Apercu',
+  fontWeight: FontWeight.w700,
+  fontSize: 16,
+  color: Color(0xffE52836),
+);
+
+TextStyle kBottomCont = const TextStyle(
+    color: Colors.black,
+    fontFamily: 'Sharp Sans',
+    fontWeight: FontWeight.w600,
+    fontSize: 10);
