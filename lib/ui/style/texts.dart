@@ -381,10 +381,26 @@ TextStyle kBodyText10TextStyle = const TextStyle(
 
 TextStyle kBodyText11TextStyle = const TextStyle(
   fontFamily: AppFont.body,
-  fontWeight: FontWeight.w300,
-  color: Color.fromRGBO(4, 11, 69, 0.5),
+  fontWeight: FontWeight.w400,
+  color: Color.fromRGBO(4, 11, 69, 0.7),
   fontSize: 15,
 );
+
+TextStyle kBodyText12TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.w700,
+  color: Color.fromRGBO(4, 11, 69, 1),
+  fontSize: 14,
+);
+
+TextStyle kBodyText13TextStyle = const TextStyle(
+  fontFamily: AppFont.body,
+  fontWeight: FontWeight.w400,
+  color: Color.fromRGBO(4, 11, 69, 0.7),
+  fontSize: 14,
+);
+
+
 
 
 
@@ -415,8 +431,22 @@ TextStyle kBottomContainer2Text = const TextStyle(
   color: Color(0xff2FCF5F),
   fontWeight: FontWeight.bold,
   fontSize: 15,
-
 );
+
+TextStyle kBottomContainer4Text = const TextStyle(
+  fontFamily: AppFont.body,
+  color: Color.fromRGBO(47, 207, 95, 1),
+  fontWeight: FontWeight.w700,
+  fontSize: 13,
+);
+
+TextStyle kBottomContainer5Text = const TextStyle(
+  fontFamily: AppFont.body,
+  color: Colors.white,
+  fontWeight: FontWeight.w700,
+  fontSize: 13,
+);
+
 TextStyle kTopSentenceBottomContainerText = const TextStyle(
 color: Colors.purple,
     fontWeight: FontWeight.bold) ;
