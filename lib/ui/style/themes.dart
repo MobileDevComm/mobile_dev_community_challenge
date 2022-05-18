@@ -21,7 +21,7 @@ final ThemeData kThemeData = ThemeData(
     background: AppColor.scaffoldBgColor,
     onBackground: AppColor.scaffoldBgColor,
     surface: Colors.white,
-    onSurface: Colors.white70,
+    onSurface: Colors.white70, primaryVariant:  AppColor.primarySwatch, secondaryVariant: AppColor.primarySwatch,
   ),
   primaryIconTheme: const IconThemeData(color: AppColor.iconColor),
   visualDensity: VisualDensity.adaptivePlatformDensity,
