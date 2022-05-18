@@ -15,6 +15,7 @@ import 'ui/style/colors.dart';
 import 'ui/style/themes.dart';
 
 void main() {
+  // This is some comment to signify a change in the file.
   runApp(const MyApp());
 }
 
